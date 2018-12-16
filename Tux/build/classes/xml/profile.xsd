@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            targetNamespace="http://myGame/tux"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tux="http://myGame/tux"
+            elementFormDefault="qualified">
+    
+    <!--_________________________________RACINE__________________________________-->  
+    <xsd:include schemaLocation="dico.xsd"/>
+    
+    <xsd:element name="profile" type="tux:Profile"/>
+    <xsd:complexType name="Profile">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="avatar" type="xsd:string"/>
+            <xsd:element name="birthday" type="xsd:date"/>
+            <xsd:element name="games" type="tux:Games"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--</xsd:element>-->
+    
+    <!--____________________Définition du type complexe Games____________________-->  
+    <xsd:complexType name="Games">
+        <xsd:sequence>
+            <!--Déclaration des éléments de Games-->
+            <xsd:element name="game" type="tux:Game" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <!--____________________Définition du type complexe Game_____________________-->  
+    <xsd:complexType name="Game"> 
+        
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <!--Définition des éléments de game-->
+            <xsd:element name="time" type="xsd:int" />
+            <xsd:element name="word">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="tux:Word">  <!--attribut dans la base du type Word-->
+                            <xsd:attribute name="level">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:int">  <!--Attribut de type int-->
+                                        <xsd:minInclusive value="1"/>  <!--Niveau min = 1-->
+                                        <xsd:maxInclusive value="5"/> <!--Niveau max = 5-->
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:attribute>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+            
+        </xsd:choice>
+        
+        
+        
+        <!--Attribut date-->
+        <xsd:attribute name="date">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:date"/>  <!--Attribut de type int-->
+            </xsd:simpleType>
+        </xsd:attribute>
+        <!--Attribut found-->
+        <xsd:attribute name="found">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="\d{2}%"/> <!--De type xx% avec x un digit-->
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        
+    </xsd:complexType>
+    
+    
+                    
+
+        
+        
+    <!--_____________________Définition du type simple Word______________________-->  
+    
+    <xsd:simpleType name="Word">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/> <!--Mot de 3 lettres minimum-->
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+</xsd:schema>

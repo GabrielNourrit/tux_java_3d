@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="profile.xsl"?><tux:profile xmlns:tux="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux profile.xsd">
+    
+    <tux:name>Alban</tux:name>
+    <tux:avatar>image/tux.jpg</tux:avatar>
+    <tux:birthday>2006-05-08</tux:birthday>
+    <tux:games>
+        <tux:game date="2013-12-10" found="50%">
+            <tux:time>20</tux:time>
+            <tux:word level="1">cle</tux:word>
+        </tux:game>
+        <tux:game date="2013-12-11" found="75%">
+            <tux:word level="2">indice</tux:word>
+            <tux:time>40</tux:time>
+        </tux:game>
+        <tux:game date="2013-12-11" found="90%">
+            <tux:word level="2">indice</tux:word>
+            <tux:time>20</tux:time>
+        </tux:game>
+        <tux:game date="2017-12-10" found="100.0%">
+            <tux:word level="1">toto</tux:word>
+            <tux:time>18.0</tux:time>
+        </tux:game>
+    <tux:game date="2017-12-10" found="100.0%">
+            <tux:word level="2">souris</tux:word>
+            <tux:time>32.0</tux:time>
+        </tux:game>
+    <tux:game date="2017-12-16" found="100.0%">
+            <tux:word level="1">jour</tux:word>
+            <tux:time>22.0</tux:time>
+        </tux:game>
+        <tux:game date="2017-12-16" found="100.0%">
+            <tux:word level="5">anticonstitutionellement</tux:word>
+            <tux:time>132.0</tux:time>
+        </tux:game>
+    <tux:game date="2018-01-01" found="100.0%">
+            <tux:word level="1">mois</tux:word>
+            <tux:time>39.0</tux:time>
+        </tux:game>
+        <tux:game date="2018-01-01" found="100.0%">
+            <tux:word level="5">anticonstitutionellement</tux:word>
+            <tux:time>145.0</tux:time>
+        </tux:game>
+    <tux:game date="2018-12-16" found="100.0%">
+            <tux:word level="1">toto</tux:word>
+            <tux:time>17.0</tux:time>
+        </tux:game>
+        <tux:game date="2018-12-16" found="100.0%">
+            <tux:word level="2">maman</tux:word>
+            <tux:time>18.0</tux:time>
+        </tux:game>
+    </tux:games>
+    
+</tux:profile>

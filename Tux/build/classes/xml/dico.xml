@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tux:dictionnaire
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux dico.xsd'>
+    
+    <tux:mot niveau="1">toto</tux:mot>
+    <tux:mot niveau="1">mois</tux:mot>
+    <tux:mot niveau="3">ordinateur</tux:mot>
+    <tux:mot niveau="3">bonjour</tux:mot>
+    <tux:mot niveau="1">toto</tux:mot>
+    <tux:mot niveau="5">anticonstitutionellement</tux:mot>
+    <tux:mot niveau="1">jour</tux:mot>
+    <tux:mot niveau="2">maman</tux:mot>
+    <tux:mot niveau="2">souris</tux:mot>
+    <tux:mot niveau="4">polymorphisme</tux:mot>
+    
+
+</tux:dictionnaire>

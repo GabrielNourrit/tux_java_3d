@@ -1,0 +1,12 @@
+README TUX:
+SET UP:
+       warning : this project was created on netbeans then if you use Eclipse check that project is in 1.7 java version
+       run the 'LanceurDeJeu.java' Class in order to play
+IN GAME:
+       To move use the keyboard arrows
+       To skip use space
+       To change the camera press c
+       You can also move the camera with z q s d
+
+       The crates in height have a shadow, it allows to see where to jump
+       You can change rooms with the doors on the sides of the rooms

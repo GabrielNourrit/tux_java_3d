@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<xsd:schema version="1.0"
+            targetNamespace="http://myGame/tux"
+            xmlns:tux="http://myGame/tux"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+    <xsd:element name="dictionnaire" type="tux:Dictionnaire"/>
+    
+    <!--<xsd:element name="dictionnaire">-->
+    <xsd:complexType name="Dictionnaire">
+        <xsd:sequence>
+            <!--Déclaration de l'élément mot-->
+            <xsd:element name="mot" maxOccurs="unbounded">
+                <xsd:complexType> <!--Création d'un complexType pour pouvoir créer l'attribut-->
+                    <xsd:simpleContent>
+                        <xsd:extension base="tux:Mot">  <!--attribut dans la base du type Mot-->
+                            <xsd:attribute name="niveau">  <!--Déclaration de l'attribut-->
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:int">  <!--Attribut de type int-->
+                                        <xsd:minInclusive value="1"/>  <!--Niveau min = 1-->
+                                        <xsd:maxInclusive value="5"/> <!--Niveau max = 5-->
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:attribute>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--</xsd:element>-->
+    
+    <!--Définition du type complexe Mot-->  
+    <xsd:simpleType name="Mot">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+</xsd:schema>

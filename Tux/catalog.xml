@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/_COURS/Cours-MIAGE/L3MIAGE/S1/Langages%20pour%20le%20web/Tux/Tux_1/src/xml/profile.xsd" uri="xml-resources/jaxb/ProfileBinding/profile.xsd"/>
+    <system systemId="file:/D:/_COURS/Cours-MIAGE/L3MIAGE/S1/Langages%20pour%20le%20web/Tux/Tux_1/src/xml/dico.xsd" uri="xml-resources/jaxb/ProfileBinding/dico.xsd"/>
+    <system systemId="file:/D:/_COURS/Cours-MIAGE/L3MIAGE/S1/Langages%20pour%20le%20web/Tux/Tux_1/src/xml/XmlRootBinding.xml" uri="xml-resources/jaxb/ProfileBinding/XmlRootBinding.xml"/>
+</catalog>

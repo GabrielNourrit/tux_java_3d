@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plateau>
+    
+    <dimension>
+        <height>30</height>
+        <width>40</width>
+        <depth>50</depth>
+    </dimension>
+    
+    <mapping>
+        <textureBottom>textures/skybox/interstellar/bottom.png</textureBottom>
+        <textureEast>textures/skybox/cave/east.png</textureEast>
+        <textureWest>textures/skybox/cave/west.png</textureWest>
+        <textureNorth>textures/skybox/cave/north.png</textureNorth>
+    </mapping>
+    
+    <pion url="une url"/>
+    
+</plateau>
